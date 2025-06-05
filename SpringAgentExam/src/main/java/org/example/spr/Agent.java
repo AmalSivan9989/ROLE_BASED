@@ -2,11 +2,14 @@ package org.example.spr;
 
 import lombok.Getter;
 import lombok.Setter;
-import org.springframework.beans.factory.annotation.Autowired;
+import lombok.ToString;
 
 @Getter
 @Setter
+@ToString
+
 public class Agent {
+
     private int agentId;
     private String name;
     private String city;
