@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="SpringAutoCons" />
+        <module name="SpringExample" />
+        <module name="SpringJdbcExample" />
+        <module name="day2java" />
+        <module name="day1java" />
+        <module name="SpringExample2" />
+        <module name="SpringAutoWire" />
+        <module name="SpringPersonalInfo" />
+        <module name="SpringWiring" />
+        <module name="SpringAgentExam" />
+        <module name="SpringConstructors" />
+        <module name="SpringTask" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="day1" target="18" />
+      <module name="resources" target="18" />
+      <module name="SpringName" target="18" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

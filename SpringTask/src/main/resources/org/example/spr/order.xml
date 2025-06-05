@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns = "http://www.springframework.org/schema/beans"
+       xmlns:xsi = "http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context = "http://www.springframework.org/schema/context"
+       xsi:schemaLocation = "http://www.springframework.org/schema/beans
+   http://www.springframework.org/schema/beans/spring-beans.xsd
+   http://www.springframework.org/schema/context
+   http://www.springframework.org/schema/context/spring-context.xsd">
+    <context:annotation-config />
+
+<bean id="product1" class="org.example.spr.Product">
+    <constructor-arg name="productName" value="moto"/>
+    <constructor-arg name="quantityAvail" value="2"/>
+    <constructor-arg name="price" value="20000"/>
+</bean>
+    <bean id="product2" class="org.example.spr.Product">
+        <constructor-arg name="productName" value="oppo"/>
+        <constructor-arg name="quantityAvail" value="3"/>
+        <constructor-arg name="price" value="15000"/>
+    </bean>
+    <bean id="order1" class="org.example.spr.Order" autowire="constructor">
+        <constructor-arg name="orderId" value="1"/>
+        <constructor-arg name="qtyOrd" value="1"/>
+        <constructor-arg name="product" ref="product1"/>
+    </bean>
+    <bean id="order2" class="org.example.spr.Order" autowire="constructor">
+        <constructor-arg name="orderId" value="2"/>
+        <constructor-arg name="qtyOrd" value="1"/>
+        <constructor-arg name="product" ref="product2"/>
+    </bean>
+    <bean id="orderLogic" class="org.example.spr.OrderLogic">
+        <constructor-arg>
+            <list>
+                <ref bean="order1"/>
+                <ref bean="order2"/>
+            </list>
+        </constructor-arg>
+    </bean>
+
+
+    </beans>

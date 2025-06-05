@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN//EN"
+        "http://www.springframework.org/dtd/spring-beans.dtd">
+<beans>
+    <bean id="bean1" class="org.example.dao.HelloImpl">
+        <property name="greeting" value="Good Morning..." />
+    </bean>
+
+        <bean id="bean2" class="org.example.dao.HelloImpl">
+            <property name="greeting" value="Good Morning ">
+            </property>
+        </bean>
+    <bean id="bean3" class="org.example.dao.HelloImpl">
+        <property name="greeting" value="Good Afternoon ">
+        </property>
+    </bean>
+    <bean id="bean4" class="org.example.dao.HelloImpl">
+        <property name="greeting" value="Good Evening ">
+        </property>
+    </bean>
+<bean id="beanHello" class="org.example.dao.HelloImpl">
+    <property name="welcomeNote" value="Welcome to Hexaware..."/>
+    <property name="greeting" value="thankyou for joining training Mr/Miss/Mrs"/>
+    <property name="endNote" value="all the best for coming exams and project"/>
+</bean>
+    <bean id="nameBean1" class="org.example.dao.NameImpl">
+        <property name="firstName" value="Amal"/>
+        <property name="lastName" value="Sivan"/>
+    </bean>
+    <bean id="nameBean2" class="org.example.dao.NameImpl">
+        <property name="firstName" value="john"/>
+        <property name="lastName" value="edward"/>
+    </bean>
+
+</beans>
