@@ -18,6 +18,11 @@
         <option value="$PROJECT_DIR$/SpringAutoWire/pom.xml" />
         <option value="$PROJECT_DIR$/SpringAutoCons/pom.xml" />
         <option value="$PROJECT_DIR$/SpringTask/pom.xml" />
+        <option value="$PROJECT_DIR$/HIbExample/pom.xml" />
+        <option value="$PROJECT_DIR$/HibTestExamples/pom.xml" />
+        <option value="$PROJECT_DIR$/HibCrExample/pom.xml" />
+        <option value="$PROJECT_DIR$/HibOneToMany/pom.xml" />
+        <option value="$PROJECT_DIR$/HibNamedQueries/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">
